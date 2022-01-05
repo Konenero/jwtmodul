@@ -1,5 +1,6 @@
 package app.model;
 
+import io.swagger.annotations.Api;
 import lombok.*;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.relational.core.mapping.Table;
@@ -16,6 +17,7 @@ import java.util.List;
 @AllArgsConstructor
 @ToString
 @EqualsAndHashCode
+@Api
 public class User implements UserDetails {
 
     @Id
